@@ -21,14 +21,14 @@ driver.get('https://accounts.google.com/ServiceLogin/identifier?service=classroo
 # Logs in the classroom
 username = driver.find_element_by_id('identifierId')
 username.click()
-username.send_keys('kr7119@srmist.edu.in')
+username.send_keys('Your Email ID')
 
 next = driver.find_element_by_xpath('//*[@id="identifierNext"]/div/button/div[2]')
 next.click()
 time.sleep(2)
 password = driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')
 password.click()
-password.send_keys('Srm@chintu2')
+password.send_keys('Your Password')
 
 
 next = driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button/div[2]')
